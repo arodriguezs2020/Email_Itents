@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Entrega Obligatoria Intents</string>
+    <string name="Chocolate">Chocolate</string>
+    <string name="Whipped_cream">Nata montada</string>
+    <string name="topping">Relleno</string>
+    <string name="enter_your_name">Introduce tu nombre</string>
+    <string name="quantity">Cantidad</string>
+    <string name="_2">2</string>
+    <string name="order_summary">RESUMEN</string>
+    <string name="order">PEDIR</string>
+    <string name="you_ordered">, Has pedido </string>
+    <string name="coffee">\" cafes"</string>
+    <string name="with_Chocolate">\" con Chocolate\"</string>
+    <string name="and">\" and\"</string>
+    <string name="Whipped_Cream">\" con Nata Montada\"</string>
+    <string name="correo">Introduce tu email</string>
+    <string name="message">Confirmacion de Pedido</string>
+    <string name="no">NO</string>
+    <string name="si">Si</string>
+    <string name="toast">Corrige el pedido</string>
+    <string name="your_email_is">\"Tu email es \"</string>
+    <string name="is_it_correct">¿Es correcto?</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Entrega Obligatoria Intents</string>
+    <string name="Chocolate">Chocolate</string>
+    <string name="Whipped_cream">Whipped cream</string>
+    <string name="topping">TOPPING</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="_2">2</string>
+    <string name="order_summary">ORDER SUMMARY</string>
+    <string name="order">ORDER</string>
+    <string name="you_ordered">, You ordered </string>
+    <string name="coffee">\" coffees\"</string>
+    <string name="with_Chocolate">\" with Chocolate\"</string>
+    <string name="and">\" and\"</string>
+    <string name="Whipped_Cream">\" with Whipped Cream\"</string>
+    <string name="correo">Enter your email</string>
+    <string name="message">Order Confirmation</string>
+    <string name="no">No</string>
+    <string name="si">YES</string>
+    <string name="toast">Correct your order</string>
+    <string name="your_email_is">\"Your e-main is \"</string>
+    <string name="is_it_correct">Is It Correct?</string>
+</resources>
