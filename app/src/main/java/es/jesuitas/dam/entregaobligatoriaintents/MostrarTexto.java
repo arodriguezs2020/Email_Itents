@@ -27,7 +27,7 @@ public class MostrarTexto extends AppCompatActivity {
         String toast = getString(R.string.toast);
         Intent intent = new Intent();
         intent.putExtra("Toast", toast);
-        setResult(RESULT_OK, intent);
+        setResult(RESULT_CANCELED, intent);
         finish();
     }
 
@@ -40,9 +40,11 @@ public class MostrarTexto extends AppCompatActivity {
 
         sendIntent.setAction(Intent.ACTION_SENDTO);
         sendIntent.setData(Uri.parse("mailto:"));
-        sendIntent.putExtra(Intent.EXTRA_TEXT, message);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, subject);
         sendIntent.putExtra(Intent.EXTRA_EMAIL, correo);
-        sendIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
-        startActivity(sendIntent);
+        sendIntent.putExtra(Intent.EXTRA_SUBJECT, message);
+
+        setResult(RESULT_OK, sendIntent);
+        finish();
     }
 }

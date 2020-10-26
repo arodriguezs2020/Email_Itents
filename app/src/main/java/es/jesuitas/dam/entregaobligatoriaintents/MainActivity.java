@@ -3,6 +3,7 @@ package es.jesuitas.dam.entregaobligatoriaintents;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         cambiarTextodecre.setText(String.valueOf(cantidad));
     }
 
-    private void incremento(View view) {
+    public void incremento(View view) {
         cantidad++;
         TextView cambiarTextoincre = findViewById(R.id.text4);
         cambiarTextoincre.setText(String.valueOf(cantidad));
@@ -80,10 +81,13 @@ public class MainActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == TEXT_REQUEST) {
-            if (resultCode == RESULT_OK) {
+            if (resultCode == RESULT_CANCELED) {
                 String toast = data.getStringExtra("Toast");
                 Toast toast2 = Toast.makeText(this, toast, Toast.LENGTH_SHORT);
                 toast2.show();
+            }
+            if (resultCode == RESULT_OK) {
+                startActivity(data);
             }
         }
     }
